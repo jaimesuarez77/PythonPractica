@@ -129,7 +129,7 @@ while fib <100:
     suma = fib
     
     print (fib)
-*******************************************************
+**********************************************************************************************************************************************************
 7.El estadio atanasio girardot realizará el clasico de la montaña, se requiere
 saber el numero de boletas que se venden conociendo que la capacidad del estadio 
 es de 45000, pero no se vende necesariamente el total de boletas, ademas conocer
@@ -152,33 +152,50 @@ occidente = 0
 mujeres = 0
 hombres = 0
 personas = 0
-
 personas = input("Quieres disfrutar del clásico en vivo si o no : ")
-	if personas == 'si':
+while (personas == 'si'):
 	genero = input("ingrese su genero masculino (m), femenino(f) : ")
-		if genero == 'f':
-			mujeres +=1
-			ubicacion = input("ingrese su ubicación en las tribunas norte(n), sur(s), oriente(or), occidente(oc): ")
-				if ubicacion == 'n':
-					norte +=1
-				elif ubicacion == 's':
-					sur += 1
-				elif ubicacion == 'or':
-					oriente += 1
-				else:
-					occidente += 1  
-
-elif genero == 'm': 
-        hombres +=1
-        ubicacion = input("ingrese su ubicación en las tribunas norte(n), sur(s), oriente(or), occidente(oc): ")
-		if ubicacion == 'n':
+	if (genero == 'f'):
+		mujeres +=1
+		ubicacion = input("ingrese su ubicación en las tribunas norte(n), sur(s), oriente(or), occidente(oc): ")
+		if (ubicacion == 'n'):
 			norte +=1
-		elif ubicacion == 's':
+			personas = input("Quieres disfrutar del clásico en vivo si o no : ")	
+		elif (ubicacion == 's'):
 			sur += 1
-		elif ubicacion == 'or':
+			personas = input("Quieres disfrutar del clásico en vivo si o no : ")
+		elif (ubicacion == 'or'):
 			oriente += 1
+			personas = input("Quieres disfrutar del clásico en vivo si o no : ")
 		else:
 			occidente += 1
+			personas = input("Quieres disfrutar del clásico en vivo si o no : ")   
+	if (genero =='m'):
+		hombres +=1
+		ubicacion = input("ingrese su ubicación en las tribunas norte(n), sur(s), oriente(or), occidente(oc): ")
+		if (ubicacion == 'n'):
+			norte +=1
+			personas = input("Quieres disfrutar del clásico en vivo si o no : ")	
+		elif (ubicacion == 's'):
+			sur += 1
+			personas = input("Quieres disfrutar del clásico en vivo si o no : ")
+		elif (ubicacion == 'or'):
+			oriente += 1
+			personas = input("Quieres disfrutar del clásico en vivo si o no : ")
+		else:
+			occidente += 1
+			personas = input("Quieres disfrutar del clásico en vivo si o no : ")
+		
+		
+		
+	
+	       
+
+print("el total de personas que ingresaron fueron: ", mujeres + hombres)
+print("las personas que ingresaron a norte fueron: ", norte)
+print("las personas que ingresaron a sur fueron: ", sur)
+print("las personas que ingresaron a oriente fueron: ", oriente)
+print("las personas que ingresaron a occidente fueron: ", occidente)
 
 
 
