@@ -55,11 +55,34 @@ Se necesita conocer e numero de personas que asisten a comfama de las ballenitas
 
 
 
-
+*******************************************************************************************************************************************************************
 Se requiere saber el numero de personas qe ingresan a un lavadero de vehiculos,  y establecer la cantidad de de personas por cada uno de los servicios,
  si el servicio es sencillo o full, si el sencillo tiene un costo de 12000 y el full de 17000, ¿cual es la cantidad de dinero que se recolecto por cada uno de los
 servicios?
-******************************************************************************************************************************************************************
+
+"""LAVADERO"""
+personas = 0
+full = 0
+valorFull = 12000
+sencillo = 0
+valorSencillo = 17000
+
+servicio = input ("Desea alistar su vehículo si o no: ")
+while (servicio == 'si'):
+    personas +=1
+    tipo = input("como desea el servicio Full(f), o sencillo (s): ")
+    if (tipo == 'f'):
+        full+=1
+    else:
+        sencillo+= 1
+
+
+
+
+
+
+
+
 
 
 
