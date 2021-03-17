@@ -68,10 +68,7 @@ servicios?
 
 
 
-8.La escuela de natación de la ciudad de medellín ofrece cursos para las edades
-(4 años a 8 años), (9 años a 12 años), con niveles basico, experimentado,
- profesional, cada nivel tiene unos costos de 120000 nivel basico, 
-250000 experimentado y profesional 280000.
+
 **********************************************************
 1.mostrar los primeros 10 numeros (imprimir contador)
 num = 0 
@@ -196,6 +193,52 @@ print("las personas que ingresaron a norte fueron: ", norte)
 print("las personas que ingresaron a sur fueron: ", sur)
 print("las personas que ingresaron a oriente fueron: ", oriente)
 print("las personas que ingresaron a occidente fueron: ", occidente)
+***********************************************************************************************************************************
+8.La escuela de natación de la ciudad de medellín ofrece cursos para las edades
+(4 años a 8 años), (9 años a 12 años), con niveles basico, experimentado,
+ profesional, cada nivel tiene unos costos de 120000 nivel basico, 
+250000 experimentado y profesional 280000.
+
+age = 0
+basico = 0
+valorBasico = 120000
+experimentado = 0
+valorExperimentado = 250000
+profecional = 0
+valorProfecional = 280000
+alumnos = 0
+parbulos = 0
+adolecentes = 0
+
+centinela = input("Deseas inscribirte en el curso de natación si o no : ")
+while (centinela == 'si'):
+    alumnos += 1
+    age = int(input("primero dinos tu edad: "))
+    if (age > 12):
+        print ('tienes demasiados años')
+    elif (age <= 8):
+        parbulos +=1
+    elif(age >=9):
+        adolecentes+=1
+
+    nivel = input("En que nivel te vas a matricular basico(b), experimentado(e), profecional(p): ")
+    if (nivel == 'b'):
+        basico+=1
+    elif (nivel == 'e'):
+            experimentado +=1
+    else:
+            profecional+=1
+    centinela = input("Deseas inscribirte en el curso de natación si o no : ")
+
+print("alumnos matriculados: ", alumnos)  
+print("alumnos menores de 8: ", parbulos)
+print("alumnos mayores de 9: ", adolecentes)  
+print("alumnos matriculados en nivel basico: ", basico)
+print("Recaudo  en nivel basico: ", basico * valorBasico)
+print("alumnos matriculados en nivel experimetado: ", experimentado)
+print("Recaudo  en nivel basico: ", basico * valorExperimentado)
+print("alumnos matriculados en nivel experimetado: ", profecional)
+print("Recaudo  en nivel basico: ", basico * valorProfecional)
 
 
 
