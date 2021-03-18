@@ -66,30 +66,25 @@ full = 0
 valorFull = 12000
 sencillo = 0
 valorSencillo = 17000
+servicio = 0
+tipo = ''
 
-servicio = input ("Desea alistar su vehículo si o no: ")
+servicio = input("Desea alistar su vehículo si o no: ")
 while (servicio == 'si'):
     personas +=1
     tipo = input("como desea el servicio Full(f), o sencillo (s): ")
     if (tipo == 'f'):
         full+=1
+        servicio = input("Desea alistar su vehículo si o no: ")
     else:
         sencillo+= 1
+        servicio = input("Desea alistar su vehículo si o no: ")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("las personas que tomaron el servicio fue: ", personas)
+print("las personas que tomaron el servicio full fue: ", full )
+print("El total recaudado por el servicio full fue: ", full * valorFull)
+print("las personas que tomaron el servicio sencillo fue: ", sencillo )
+print("El total recaudado por el servicio sencillo fue: ", sencillo * valorSencillo)
 
 
 **********************************************************
